@@ -6,7 +6,7 @@
 
 body{
     background-color: #0A142D;
-    margin: 8%;
+    margin: 5%;
 }
 
 img
@@ -32,6 +32,12 @@ h3
     color: white;
     padding: 10px;
     font-size: 30px;
+}
+
+.error-message p
+{
+    color: red;
+    text-align: center;
 }
 
 input[type=text], input[type=password], input[type=submit] {
