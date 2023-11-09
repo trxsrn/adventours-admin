@@ -1,7 +1,7 @@
 <?php 
 
 $pageTitle = "HELP";
-include 'navbar.html';
+include 'navbar.php';
 
 ?>
 

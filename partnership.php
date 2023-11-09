@@ -1,7 +1,7 @@
 <?php 
 
 $pageTitle = "BUSINESS PARTNERSHIP";
-include 'navbar.html';
+include 'navbar.php';
 
 ?>
 

@@ -1,7 +1,7 @@
 <?php 
 
 $pageTitle = "BOOKINGS";
-include 'navbar.html';
+include 'navbar.php';
 
 ?>
 

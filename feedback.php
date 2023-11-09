@@ -1,7 +1,7 @@
 <?php 
 
 $pageTitle = "FEEDBACK AND SURVEY";
-include 'navbar.html';
+include 'navbar.php';
 
 ?>
 

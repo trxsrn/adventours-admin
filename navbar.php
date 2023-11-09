@@ -17,12 +17,12 @@
             <ul>
                 <li>
                     <a href="#">
-                        <img src ="assets/imgs/logo.png" class ="logo" height="200px" width="400px">
+                        <img src ="/ADVENTOUR - ADMIN/assets/imgs/logo.png" class ="logo" height="200px" width="400px">
                     </a>
                 </li>
 
                 <li>
-                    <a href="dashboard.php">
+                    <a href="/ADVENTOUR - ADMIN/dashboard.php">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -31,7 +31,7 @@
                 </li>
 
                 <li>
-                    <a href="users.php">
+                    <a href="/ADVENTOUR - ADMIN/pages/user/userprofile.php">
                         <span class="icon">
                             <ion-icon name="people-outline"></ion-icon>
                         </span>
@@ -40,7 +40,7 @@
                 </li>
 
                 <li>
-                    <a href="contents.php">
+                    <a href="/ADVENTOUR - ADMIN/pages/contents/touristatrraction.php">
                         <span class="icon">
                             <ion-icon name="create"></ion-icon>
                         </span>
@@ -49,7 +49,7 @@
                 </li>
 
                 <li>
-                    <a href="bookings.php">
+                    <a href="/ADVENTOUR - ADMIN/pages/bookings/tour.php">
                         <span class="icon">
                             <ion-icon name="book"></ion-icon>
                         </span>
@@ -58,7 +58,7 @@
                 </li>
 
                 <li>
-                    <a href="notification.php">
+                    <a href="/ADVENTOUR - ADMIN/pages/notification/pushnotification.php">
                         <span class="icon">
                             <ion-icon name="notifications-outline"></ion-icon>
                         </span>
@@ -67,7 +67,7 @@
                 </li>
 
                 <li>
-                    <a href="analytics.php">
+                    <a href="/ADVENTOUR - ADMIN/pages/analytics/analytics.php">
                         <span class="icon">
                             <ion-icon name="analytics"></ion-icon>
                         </span>
@@ -119,12 +119,53 @@
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
-                <h1><?php echo isset($pageTitle) ? $pageTitle : "DASHBOARD"; ?></h1>
+                <div class="page-header">  
+                    <div class="pagetitle">
+                    <div class="submenu">
+                        <?php if (isset($pageTitle) && $pageTitle === "DASHBOARD"): ?>
+                            <p>DASHBOARD</p>
+                        <?php elseif (isset($pageTitle) && $pageTitle === "USER MANAGEMENT"): ?>
+                            <p>USER MANAGEMENT / <span id="subpageTitle">User Profile</span></p>
+                            <div class="submenu">
+                                <div class="vertical-navbar">
+                                    <ul>
+                                        <li><a href="#" onclick="changeSubpageTitle('User Profile')">User Profile</a></li>
+                                        <li><a href="#" onclick="changeSubpageTitle('Authentication')">Authentication</a></li>
+                                        <li><a href="#" onclick="changeSubpageTitle('User Data')">User Data</a></li>
+                                        <li><a href="#" onclick="changeSubpageTitle('User Support')">User Support</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        <!-- <?php else: ?> -->
+                            <!-- <p><?php echo isset($pageTitle) ? $pageTitle : "DASHBOARD"; ?></p> -->
+                        <!-- <?php endif; ?> -->
+                        <!-- Repeat the above structure for other page titles and subpages -->
+                    </div>
+                    </div>
+                    <div class="profile">
+                    <i class="fa-solid fa-user" style="color: white;"></i><p>ADMINISTRATOR</p><i class="fa-solid fa-caret-down" style="color: white;"></i>
+                    <div class="profile-menu">
+                        <ul>
+                            <li>My Profile</li>
+                            <li>Settings</li>
+                            <li>Logout</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
             </div>
 
            
     <!-- =========== Scripts =========  -->
     <script src="assets/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function changeSubpageTitle(subpageTitle) {
+            $('#subpageTitle').text(subpageTitle);
+        }
+    </script>
 
     <!-- ====== ionicons ======= -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

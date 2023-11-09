@@ -1,7 +1,7 @@
 <?php 
 
 $pageTitle = "SETTINGS";
-include 'navbar.html';
+include 'navbar.php';
 
 ?>
 

@@ -1,7 +1,7 @@
 <?php 
 
 $pageTitle = "CONTENT MANAGEMENT";
-include 'navbar.html';
+include 'navbar.php';
 
 ?>
 

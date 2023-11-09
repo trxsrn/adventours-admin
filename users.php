@@ -1,7 +1,8 @@
 <?php 
 
 $pageTitle = "USER MANAGEMENT";
-include 'navbar.html';
+$subPageTitle = "User Profiles";
+include 'navbar.php';
 
 ?>
 

@@ -1,7 +1,7 @@
 <?php 
 
 $pageTitle = "ANALYTICS AND REPORTING ";
-include 'navbar.html';
+include 'navbar.php';
 
 ?>
 

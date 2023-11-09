@@ -1,7 +1,7 @@
 <?php 
 
 $pageTitle = "NOTIFICATIONS";
-include 'navbar.html';
+include 'navbar.php';
 
 ?>
 
